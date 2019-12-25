@@ -2,7 +2,7 @@
 title: Installation and reference
 date: 2019-04-09 11:11:11
 categories:
-  - other
+  - 数据库
 ---
 
 ## Install
