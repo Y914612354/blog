@@ -1,6 +1,6 @@
 module.exports = {
-  title: "vuepress-theme-reco",
-  description: 'A simple and beautiful vuepress blog theme .',
+  title: "My Blog",
+  description: '为了更美好的明天而战！',
   dest: 'example/docs/public',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -10,9 +10,9 @@ module.exports = {
   theme: require.resolve('../../../'),
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeLine/', icon: 'reco-date' },
-      { text: 'Contact',
+      { text: '首页', link: '/', icon: 'reco-home' },
+      { text: '时轴', link: '/timeLine/', icon: 'reco-date' },
+      { text: '关于',
         icon: 'reco-message',
         items: [
           { text: 'NPM', link: 'https://www.npmjs.com/~reco_luan', icon: 'reco-npm' },
@@ -29,11 +29,11 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
+        text: '分类' // 默认 “分类”
       },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        text: '标签' // 默认 “标签”
       }
     },
     logo: '/head.png',
@@ -45,11 +45,11 @@ module.exports = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: 'reco_luan',
+    author: 'JiaHao',
     // 备案号
-    record: 'xxxx',
+    record: '豫ICP备18022029',
     // 项目开始时间
-    startYear: '2017',
+    startYear: '2019',
     /**
      * 密钥 (if your blog is private)
      */
@@ -71,14 +71,14 @@ module.exports = {
     vssueConfig: {
       admins: ['recoluan'],
       platform: 'github',
-      owner: 'vuepress-reco',
-      repo: 'vuepress-reco.github.io',
-      clientId: '4d81cea3b3d8aac8e88e',
-      clientSecret: 'd23e8556b6d3c85abffbf4b8d853afb2ea08875a',
+      owner: 'remember-5',
+      repo: 'remember-5.github.io',
+      clientId: '3c0f0716317e802812ce',
+      clientSecret: '20c95dcac4e47c14b20e01674fe270df8ff5665e',
     },
-    keyPage: {
-      keys: ['123456']
-    },
+    // keyPage: {
+    //   keys: ['123456']
+    // },
     friendLink: [
       {
         title: '午后南杂',
