@@ -32,7 +32,7 @@ module.exports = {
         text: '标签' // 默认 “标签”
       }
     },
-    logo: '/head.png',
+    logo: '/my-head.png',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,

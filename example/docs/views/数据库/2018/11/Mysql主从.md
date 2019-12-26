@@ -3,6 +3,8 @@ title: MySQL主从配置
 date: 2019-04-09 11:11:11
 categories:
   - 数据库
+tags:
+ - mysql
 ---
 
 MySQL 主从复制的方式有多种，本文主要演示基于基于日志（binlog）的主从复制方式。

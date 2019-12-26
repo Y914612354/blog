@@ -3,6 +3,8 @@ title: Navicat 链接不上Mysql8
 date: 2019-04-09 11:11:11
 categories:
   - 数据库
+tags:
+ - mysql
 ---
 
 今天下了个 MySQL8.0，发现Navicat连接不上，总是报错1251；
