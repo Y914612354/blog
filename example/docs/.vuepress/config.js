@@ -15,12 +15,8 @@ module.exports = {
       { text: '关于',
         icon: 'reco-message',
         items: [
-          { text: 'NPM', link: 'https://www.npmjs.com/~reco_luan', icon: 'reco-npm' },
-          { text: 'GitHub', link: 'https://github.com/recoluan', icon: 'reco-github' },
-          { text: '简书', link: 'https://www.jianshu.com/u/cd674a19515e', icon: 'reco-jianshu' },
-          { text: 'CSDN', link: 'https://blog.csdn.net/recoluan', icon: 'reco-csdn' },
-          { text: '博客圆', link: 'https://www.cnblogs.com/luanhewei/', icon: 'reco-bokeyuan' },
-          { text: 'WeChat', link: 'https://mp.weixin.qq.com/s/mXFqeUTegdvPliXknAAG_A', icon: 'reco-wechat' },
+          { text: 'GitHub', link: 'https://github.com/remember-5', icon: 'reco-github' },
+          { text: 'WeChat', link: 'http://qiniu.remember5.top/85b8e2ae-72ca-4357-9fc4-7fc234db39be', icon: 'reco-wechat' },
         ]
       }
     ],
