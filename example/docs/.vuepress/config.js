@@ -45,7 +45,7 @@ module.exports = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: 'JiaHao',
+    author: 'WangJiaHao',
     // 备案号
     record: '豫ICP备18022029',
     // 项目开始时间
