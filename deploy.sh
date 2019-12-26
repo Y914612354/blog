@@ -8,7 +8,7 @@ npm run build
 cd example/docs/public
 
 # 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+echo 'blog.remember5.top' > CNAME
 
 git init
 git add -A
