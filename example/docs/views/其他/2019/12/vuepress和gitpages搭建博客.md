@@ -28,17 +28,17 @@ github pages 是由github提供的静态页面服务
 1. 下载源码
 
 使用git拉去github上的源码(没安装git的同学可以直接去github下载zip包)
-```
+```bash
 git clone https://github.com/vuepress-reco/vuepress-theme-reco.git
 ```
 
 进入文件夹,使用 `yarn`或者 `cnpm` `npm`等node包管理工具执行
-```
+```bash
 yarn install
 ```
 
 启动项目
-```
+```bash
 yarn run dev
 ```
 
