@@ -1,6 +1,6 @@
 <template>
 <div class="personal-info-wrapper">
-  <img class="personal-img" :src="$frontmatter.faceImage ? $withBase($frontmatter.faceImage) : require('../images/my-home-head.png')" alt="hero">
+  <img class="personal-img" :src="$frontmatter.faceImage ? $withBase($frontmatter.faceImage) : require('../images/home-head.png')" alt="hero">
   <h3 class="name" v-if="$themeConfig.author || $site.title">{{ $themeConfig.author || $site.title }}</h3>
   <div class="num">
     <div>
