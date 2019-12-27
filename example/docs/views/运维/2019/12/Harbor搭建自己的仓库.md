@@ -1,8 +1,9 @@
 ---
 title: Harbor搭建自己的仓库
-date: 2018-12-21
+date: 2019-10-21
 tags:
  - Docker
+ - Harbor
 categories: 
  - 后端
 ---
