@@ -44,7 +44,6 @@ ln -s  mysql-5.7.26-linux-glibc2.12-x86_64 /usr/local/mysql
 ```sh
 touch  /etc/profile.d/mysql.sh
 echo "export PATH=$PATH:/usr/local/mysql/bin" >> /etc/profile.d/mysql.sh
-
 ```
 
 ## 5.配置数据库目录
@@ -107,26 +106,22 @@ long_query_time = 5
 tmp_table_size = 16M
 max_heap_table_size = 16M
 server-id=1
-
 ```
 
 
 ## 7.初始化
 ```sh
 /usr/local/mysql/bin/mysqld --initialize --user=mysql --basedir=/usr/local/mysql/ --datadir=/data/mysqldb/
-
 ```
 
 ```sh
 grep 'temporary password' /data/dblogs/mysql_error.log
-
 ```
 此时会生成一个临时密码，可以在mysql_error.log文件找到
 
 生成ssl
 ```sh
 /usr/local/mysql/bin/mysql_ssl_rsa_setup --basedir=/usr/local/mysql/ --datadir=/data/mysqldb/
-
 ```
 
 ## 8.配置服务，使用systemctl管理
