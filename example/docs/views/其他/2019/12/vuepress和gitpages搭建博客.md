@@ -5,7 +5,7 @@ categories:
   - 其他
 tags:
   - vuepress
-
+sticky: 2
 ---
 
 ``` tip
