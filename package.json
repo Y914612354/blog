@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-reco",
-  "version": "1.2.0-alpha.12",
-  "description": "A simple and beautiful vuepress Blog & Doc theme.",
+  "version": "1.2.0",
+  "description": "My Blog",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev example/docs",
@@ -9,23 +9,12 @@
     "eslint-ext": "eslint --ext .js,.vue ./",
     "eslint-fix": "eslint --fix --ext .js,.vue ./"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuepress-reco/vuepress-theme-reco.git"
-  },
   "keywords": [
     "vuepress",
     "vue",
     "theme"
   ],
-  "author": "reco_luan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuepress-reco/vuepress-theme-reco/issues"
-  },
-  "homepage": "https://vuepress-theme-reco.recoluan.com",
-  "_from": "vuepress-theme-reco@0.2.1",
-  "_resolved": "http://registry.npm.taobao.org/vuepress-theme-reco/download/vuepress-theme-reco-0.2.1.tgz",
+  "author": "remember-5",
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-back-to-top": "1.0.8",
     "@vuepress-reco/vuepress-plugin-extract-code": "1.0.3",
