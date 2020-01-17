@@ -90,6 +90,7 @@ export default {
       currentDom.querySelector('.popup-window-wrapper').style.display = 'none'
     },
     getImgUrl (info) {
+      debugger
       const { logo, email } = info
       if (logo && /^http/.test(logo)) return logo
       if (logo && !/^http/.test(logo)) return this.$withBase(logo)

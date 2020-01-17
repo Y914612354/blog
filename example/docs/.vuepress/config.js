@@ -32,7 +32,8 @@ module.exports = {
         text: '标签' // 默认 “标签”
       }
     },
-    logo: '/head.png',
+    authorAvatar: '/my-head.png',
+    logo: '/my-head.png',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
@@ -77,15 +78,30 @@ module.exports = {
     // },
     friendLink: [
       {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com'
+        title: 'mrbird',
+        desc: '无敌的鸟哥',
+        email: '',
+        link: 'https://mrbird.cc/',
+        logo: 'https://mrbird.cc/images/blogImage.jpg'
+      },
+      {
+        title: 'yuukiblog',
+        desc: '早起的虫儿被鸟吃，还在研究hexo…',
+        email: '1915995162@qq.com',
+        link: 'https://yuukiblog.top/',
+        logo: 'https://avatars1.githubusercontent.com/u/17798853?s=460&v=4'
+      },
+      {
+        title: '落日余晖',
+        desc: 'Hi, nice to meet you',
+        email: '',
+        link: 'https://mgzu.github.io/',
+        logo: 'https://mgzu.github.io/img/ma/ma.png'
       },
       {
         title: 'vuepress-theme-reco',
         desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+        logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
         link: 'https://vuepress-theme-reco.recoluan.com'
       },
     ]
