@@ -47,7 +47,7 @@ yarn run dev
 ### 添加博客配置
 进入 `example/docs/.vurpress/config.js`
 
-```js
+```javascript
 module.exports = {
 // 博客title
 title: "My Blog",
@@ -69,7 +69,6 @@ themeConfig: {
     }
   },
 }
-
 ```
 
 
@@ -80,7 +79,7 @@ themeConfig: {
 
 Valine
 
-```js
+```javascript
 module.exports = {
   theme: 'reco',
   themeConfig: {
@@ -99,7 +98,7 @@ module.exports = {
 
 Vssue
 
-```js
+```javascript
 module.exports = {
   theme: 'reco',
   themeConfig: {
@@ -126,7 +125,6 @@ module.exports = {
 在项目根目录下创建`deploy.sh`文件,并添加以下内容:
 
 ```sh
-
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -150,8 +148,6 @@ git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 cd -
-
-
 ```
 
 如果你用的 MAC，在项目根目录借助 终端 执行 `bash deploy.sh` 即可；

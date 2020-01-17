@@ -13,17 +13,17 @@ categories:
 
 
 ## 拉镜像
-```
+```docker
 docker pull pollyduan/start_spring_io
 ```
 ## 关闭防火墙
 
 ## 启动
-```
+```docker
 docker run --name spring-initializr -p 52957:8500 pollyduan/start_spring_io --server.port=8500
 ```
 ## 更改hosts 添加自己公网ip
-```
+```sh
 vim /etc/hosts
 ```
 

@@ -74,7 +74,7 @@ touch /etc/my.cnf
 chown mysql:mysql /etc/my.cnf
 ```
 
-```
+```properties
 [client]
 port = 3306
 socket = /data/dbrun/mysql.sock
@@ -134,7 +134,7 @@ touch mysqld.service
 
 文件内容如下
 
-```sh
+```properties
 # Copyright (c) 2015, 2016, Oracle and/or its affiliates. All rights reserved.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -277,14 +277,12 @@ All done!
 ## 11.导入时区
 ```sh
 /usr/local/mysql/bin/mysql_tzinfo_to_sql /usr/share/zoneinfo | /usr/local/mysql/bin/mysql -uroot -p mysql
-
 ```
 
 ## 12.验证安装
 同步时间timezone
 ```sh
 mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql -p
-
 ```
 
 ## 13.开区远程访问
