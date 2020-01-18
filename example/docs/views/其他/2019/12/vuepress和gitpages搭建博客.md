@@ -154,8 +154,22 @@ cd -
 
 如果你使用的是 WINDOWS，在项目根目录借助 Git Bash 执行 `bash deploy.sh `即可。
 
+**注意**
+这个时候可能会报ssh的错误
 
+让我们来解决一下
 
+首先打sh开shell，执行以下命令，后面邮箱自行更改，生成时会提醒输入密码，如果需要，请自行输入，无需则跳过
+```sh
+ssh-keygen -t rsa -C "xxx@qq.com"
+```
+执行完之后，我们查看以下生成的结果
+```sh
+cat ~/.ssh/id_rsa.pub
+```
+可以查看到生成到长串，我们复制一下，然后打开github -> setting -> SSH and GPG keys -> new SSH key
+输入刚才生成到ssh并保存。
+这样就可以完美到解决刚才推送失败到问题了。
 
 
 
