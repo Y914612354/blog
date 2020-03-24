@@ -10,6 +10,11 @@ tags:
 Windows下使用IDEA快捷键
 <!-- more -->
 
+## 官方版本
+
+![windows](https://raw.githubusercontent.com/remember-5/blog/master/images/2020/03/ReferenceCard-1.png)
+![mac](https://raw.githubusercontent.com/remember-5/blog/master/images/2020/03/ReferenceCardForMac-1.png)
+
 ## Ctrl
 快捷键	| 介绍 |
 --| -- |
