@@ -4,8 +4,9 @@ date: 2019-12-01
 categories:
   - 其他
 keys:
-  - 'resume' 
-  
+  - 'resume'
+---
+
 # 简历
 
 ## 个人信息
