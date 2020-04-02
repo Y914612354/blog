@@ -20,7 +20,7 @@ keys:
 - Blog：[https://blog.remember5.top](https://blog.remember5.top) 采用Github Pages搭建，访问会比较慢
 - Github：https://github.com/remember-5
 - CSND：https://blog.csdn.net/weixin_41413820
-- 网页版简历：https://blog.remember5.top
+- 网页版简历：[https://blog.remember5.top/views/其他/2019/12/resume.html](https://blog.remember5.top/views/其他/2019/12/resume.html) 密码为resume
 ---
 
 ## 联系方式
@@ -33,19 +33,20 @@ keys:
 
 ## 技能清单
 
-以下均为我熟练使用的技能
+喜欢开源技术，经常活跃开源社区，代码风格遵守阿里巴巴规范，对代码质量要求高，熟悉中间件安装、部署以及高可用方案
 
-- 语言: java/python
-- Web框架: Spring全家桶/jfinal/Django
-- 前端: vue/vue-cli/jq/echarts/Electron/
-- 前端UI: element/Antd/Layui
+以下均为我熟练使用的技术
+- 语言: Java/Python
+- 框架: SpringCloud/SpringBoot/SpringWebFlux/Jfinal/Django/Mina(NIO)
+- 前端: Vue/Vue-cli/Jquery/Echarts/Electron
+- 前端UI: Element/Antd/Layui
 - 数据库/缓存: MySQL/Oracle/Redis
-- 版本管理/文档: svn/git/mavne/swagger
-- 云和开放平台: 微信公众号/小程序(uni-app)
-- 权限控制: shiro/oAuth2/JWT
-- 测试: junit/postman/Jmeter/Mock
-- 微服务: nacos/rabbitMQ/ELK/prometheus/Skywalking/Zipkin/Sentinel
-- 服务器/容器: linux/docker/kubernetes
+- CI/CD: SVN/Git/Mavne/Swagger/Jenkins/Harbor/Prometheus/Garfana
+- 云和开放平台: 微信公众号/小程序(uni-app)/mpvue
+- 权限控制: Shiro/OAuth2/Jwt
+- 测试: Junit/Postman/Jmeter/Mock
+- 微服务: Nacos/RabbitMQ/ELK/Skywalking/Zipkin/Sentinel/Fegin/Dubbo
+- 服务器: Linux/K8s/Docker/Nginx/Tomcat/Undertow/Jetty
 
 ---
 
@@ -85,20 +86,20 @@ keys:
 ### 上海电信积分平台
 
 #### 项目介绍
-现有架构不满足新业务需求，进行项目重构。前台使用uni-app实现了前台一套代码发布多平台，集成了微服务常用插件ELK/Skywalking/Prometheus/Sentinel，同时集成svn+maven+jenkins+harbor+docker自动部署和回滚
+现有架构不满足新业务需求，进行项目重构。前台使用uni-app实现了前台一套代码发布多平台，后台采用微服务架构，集成了插件ELK/Skywalking/Prometheus/Sentinel，同时集成Svn+Maven+Jenkins+Harbor+Docker自动部署和回滚
 
 #### 项目技术	
-`SpringCloud` `SpringBoot` `Mysql` `MybatisPlus` `Vue` `Jwt` `Reids` `Guava` `ElasticSearch` `RabbtiMQ` `EasyExcel` `Feign` `Nacos` `Docker`  `Sentinel` `ELK` `Quartz` `uni-app` 
+`SpringCloud` `SpringBoot` `Mysql` `MybatisPlus` `Vue` `OAuth2` `Jwt` `Reids` `Guava` `ElasticSearch` `RabbtiMQ` `EasyExcel` `Feign` `Nacos` `Docker`  `Sentinel` `ELK` `Quartz` `uniapp` `SpringBootAdmin` `FastDFS`
 
 #### 责任描述
-负责搭建springcloud + nacos + Feign微服务架构，负责带领团队按照规划进行日常开发，协助解决团队开发中出现的问题，技术上对微服务/中间件有更深入的了解，管理上对团队的沟通和任务分配，日常问题的解决有更多的方式
+负责搭建springcloud + nacos + Feign微服务架构，负责带领团队按照规划进行日常开发，协助解决团队开发中出现的问题，技术上对微服务/中间件有更深入的了解，对团队管理的沟通和任务分配、日常问题的解决有更多的心得
 
 #### 负责模块
-1. 框架搭建：SpringBoot和SpringCloud的中间件集成和规划
+1. 框架搭建：基于SpringCloud + Nacos的微服务框架，集成各种插件
 2. 认证模块：采用RBAC模型，OAuth2+Jwt方式做认证
 3. es搜索：采用es官方提供的ik分词器和pinyi插件
 4. 下单模块：使用rabbitmq异步下单，手动ack+死信队列解决消息可靠性
-5. 定时任务模块：基于Quartz框架实现
+5. 定时任务模块：基于Quartz实现
 
 ### 上海益农信息平台
 
@@ -106,14 +107,14 @@ keys:
 上海农业信息委员会为村委会打造提供信息发布(通知),便民服务,涉农账单查询的一个综合的信息展示平台(门户网站、APP、一点通),需要对接多个平台,接口统一为RESTful风格，此项目中包含了后台，门户，和接口模块，所以采用前后端分离 + 分布式,拆分了后台、接口、定时任务项目，地址[http://yn12316.shac.cn/yn_gateway/page/index](http://yn12316.shac.cn/yn_gateway/page/index)
 
 #### 项目技术	
-`SpringBoot` `Python` `Mysql` `MybatisPlus` `Jwt` `Reids` `ElasticSearch` `EasyExcel` `Quartz`
+`SpringBoot` `Python` `Mysql` `MybatisPlus` `Jwt` `Reids` `ElasticSearch` `EasyExcel` `Quartz` `FTP` `Nginx`
 
 #### 责任描述
 负责后台的文章和文件管理两个大模块(包含前端代码)，以及对外提供该功能的服务能力。文章检索采用ES解决,点赞、浏览量、留言等要求时效性的采用redis,爬虫使用python3，bs4+requests+PyMySQL完成多线程爬虫任务
 
 #### 负责模块
 1. 文章模块： 包含了发布，文件上传，敏感校验，审核，点赞留言，及对外接口的搜索(es)，推送等 
-2. 文件管理： ftp形式上传到资源服务器，后台用户分享，修改，在线预览，下载文件
+2. 文件管理： FTP + Nginx形式,上传到资源服务器，后台用户分享，修改，在线预览，下载文件
 3. 爬虫模块： 应甲方要求，需要用爬虫爬去上海各区门户网站上对内容，对以分类并收录门户网站
 
 
@@ -123,7 +124,7 @@ keys:
 公司多于旅游景区合作,为解决景区纪念品和特产线上销售而整合研发的B2C电商平台，依托本网站实现了网上购物与网上支付等多项功能,地址[http://wx.v4.yunyouyuanfang.com/seller/login](http://wx.v4.yunyouyuanfang.com/seller/login)
 
 #### 项目技术	
-`SpringBoot` `Mysql` `Vue` `JWT` `Redis` `JustAuth`
+`SpringBoot` `Mysql` `Vue` `JWT` `Redis` `JustAuth` `ES` `Quartz` `Echarts`
 
 #### 责任描述
 在项目中,发票管理遇到图片合成以及压缩的问题，后采用java原生的方式来完成java图片合成和压缩，秒杀采用redis列队解决，对redis的数据结构和高级用法有更多认识，集成了三方登陆(使用JustAuth)，封装了三方平台支付API，方便后期使用
@@ -148,7 +149,7 @@ keys:
 `SpringBoot` `Mysql` `Vue` `Shiro` `Redis` `JustAuth` `Echarts` `3DGis` `MINA` `POI`
 
 #### 责任描述
-主要负责微信对接和硬件对接，微信卡包和消息推送等功能实现，硬件包含了人脸识别设备和入口闸机设备，硬件为TCP和UDP通信比较多，采用了Apache Mina框架(NIO)来处理高并发的情况,监控(HLS)在web播放困难，最终采用github开源项目解决。在项目充分认识到了TCP/UDP交互
+主要负责微信对接和硬件对接，微信卡包和消息推送等功能实现，人脸识别、入口闸机、身份证阅读器集成到后台，硬件为TCP和UDP通信比较多，采用了Apache Mina框架(NIO)、加深TCP/UDP交互,监控(m3u8)在web播放困难，最终采用github开源项目解决，也首次对3DGis网页技术有了新的认识
 
 #### 负责模块
 1. SOS救助：用户在公众号上发起救援（帮助），系统会将情况通知到附近的工作人员
