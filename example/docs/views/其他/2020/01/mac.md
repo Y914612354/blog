@@ -1,6 +1,6 @@
 ---
 title: mac快捷键
-date: 2020-1-17
+date: 2020-01-17
 categories:
   - 其他
 tags:
