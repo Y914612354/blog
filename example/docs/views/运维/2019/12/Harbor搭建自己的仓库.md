@@ -5,7 +5,7 @@ tags:
  - Docker
  - Harbor
 categories: 
- - 后端
+ - 运维
 ---
 
 Harbor搭建自己的仓库

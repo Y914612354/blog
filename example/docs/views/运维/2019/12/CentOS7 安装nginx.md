@@ -5,7 +5,7 @@ tags:
   - nginx
   - centos
 categories:
-  - 后端
+  - 运维
 ---
 
 nginx是常用的工具,本文展示在centos下安装nginx

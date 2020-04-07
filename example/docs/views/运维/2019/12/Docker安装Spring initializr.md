@@ -4,7 +4,7 @@ date: 2019-10-2
 tags:
  - Docker
 categories: 
- - 后端
+ - 运维
 ---
 
 本地搭建Spring Initializr服务器(运行在docker中)

@@ -5,7 +5,7 @@ tags:
   - mysql
   - centos
 categories:
-  - 后端
+  - 运维
 ---
 
 mysql安装方式

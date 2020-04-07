@@ -5,7 +5,7 @@ tags:
   - svn
   - centos
 categories:
-  - 后端
+  - 运维
 ---
 
 
