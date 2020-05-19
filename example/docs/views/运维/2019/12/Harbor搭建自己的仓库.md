@@ -64,6 +64,7 @@ vi /etc/docker/daemon.json
 "insecure-registries": ["docker.mrbird.cc"]
 ```
 
+## 忘记密码
 
 
 
