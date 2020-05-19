@@ -13,7 +13,7 @@ categories:
 ## 什么是rsa
 
 
-## springboot中使用rsa
+## spring-boot中使用rsa
 
 自行安装`lombok`等插件
 

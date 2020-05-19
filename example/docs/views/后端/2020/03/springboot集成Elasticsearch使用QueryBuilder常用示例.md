@@ -1,5 +1,5 @@
 ---
-title: springboot集成Elasticsearch使用QueryBuilder常用示例
+title: spring-boot集成ElasticSearch使用QueryBuilder常用示例
 date: 2020-03-25
 tags:
   - swagger
@@ -7,17 +7,19 @@ categories:
   - 后端
 ---
 
-介绍一下大家熟知的Elasticsearch(下文以es简称）
+介绍一下大家熟知的ElasticSearch
 <!-- more -->
 
 ## 什么是es
 
+es是全文搜索，属于最常见的需求，开源的 Elasticsearch （以下简称 es）是目前全文搜索引擎的首选。
+它可以快速地储存、搜索和分析海量数据。维基百科、Stack Overflow、Github 都采用它。
 
-## springboot中使用es
+## spring-boot中使用es
 
-Elasticsearch索引方式
+ElasticSearch索引方式
 
-Elasticsearch有两种索引方式：分别为数字和字符串
+ElasticSearch有两种索引方式：分别为数字和字符串
 数字
 ```
 {
@@ -40,57 +42,57 @@ Elasticsearch有两种索引方式：分别为数字和字符串
 精确查询
 数字：
 单个
-```
+```java
 QueryBuilder qb1 = QueryBuilders.termQuery("${fieldName}", "${fieldValue}");
 ```
 批量
-```
+```java
 QueryBuilder qb1 = QueryBuilders.termsQuery("${fieldName}", "${fieldValues}");
 ```
 字符串：
 单个
-```
+```java
 QueryBuilder qb1 = QueryBuilders.termQuery("${fieldName}.keyword", "${fieldValue}");
 ```
 批量
-```
+```java
 QueryBuilder qb1 = QueryBuilders.termsQuery("${fieldName}.keyword", "${fieldValues}");
 ```
 模糊查询
 数字查询都为精确查询
 字符串
-```
+```java
 QueryBuilder qb1 = QueryBuilders.moreLikeThisQuery(new String[]{"${fieldName}"}, new String[]{"${fieldValue}"}, null);
 ```
 范围查询
 数字
 闭区间查询
-```
+```java
 QueryBuilder qb1 = QueryBuilders.rangeQuery("${fieldName}").from(${fieldValue1}).to(${fieldValue2});
 ```
 开区间查询
-```
+```java
 QueryBuilder qb1 = QueryBuilders.rangeQuery("${fieldName}").from(${fieldValue1}, false).to(${fieldValue2}, false);
 ```
 大于
-```
+```java
 QueryBuilder qb1 = QueryBuilders.rangeQuery("${fieldName}").gt(${fieldValue});
 ```
 大于等于
-```
+```java
 QueryBuilder qb1 = QueryBuilders.rangeQuery("${fieldName}").gte(${fieldValue});
 ```
 小于
-```
+```java
 QueryBuilder qb1 = QueryBuilders.rangeQuery("${fieldName}").lt(${fieldValue});
 ```
 小于等于
-```
+```java
 QueryBuilder qb1 = QueryBuilders.rangeQuery("${fieldName}").lte(${fieldValue});
 ```
 多条件查询
 
-```
+```java
 QueryBuilder qb1 = QueryBuilders.moreLikeThisQuery(new String[]{"${fieldName1}"}, new String[]{"${fieldValue1}"}, null);
 QueryBuilder qb2 = QueryBuilders.rangeQuery("${fieldName2}").gt("${fieldValue2}");
 QueryBuilder qb3 = QueryBuilders.boolQuery().must(qb1).must(qb2);
@@ -98,17 +100,17 @@ QueryBuilder qb3 = QueryBuilders.boolQuery().must(qb1).must(qb2);
 方法说明
 
 使用QueryBuilder：
-termQuery("key", obj) 完全匹配
-termsQuery("key", obj1, obj2..) 一次匹配多个值
-matchQuery("key", Obj) 单个匹配, field不支持通配符, 前缀具高级特性
-multiMatchQuery("text", "field1", "field2"..); 匹配多个字段, field有通配符忒行
-matchAllQuery(); 匹配所有文件 组合查询：：
-must(QueryBuilders) : AND：
-mustNot(QueryBuilders): NOT：
-should: : OR：
+- termQuery("key", obj) 完全匹配
+- termsQuery("key", obj1, obj2..) 一次匹配多个值
+- matchQuery("key", Obj) 单个匹配, field不支持通配符, 前缀具高级特性
+- multiMatchQuery("text", "field1", "field2"..); 匹配多个字段, field有通配符忒行
+- matchAllQuery(); 匹配所有文件 组合查询：：
+- must(QueryBuilders) : AND：
+- mustNot(QueryBuilders): NOT：
+- should: : OR：
 
 高亮查询
-```
+```java
     /**
      * 对结果设置高亮显示
      */
@@ -146,7 +148,7 @@ should: : OR：
 }
 ```
 moreLikeThisQuery
-```
+```java
 /**
      * moreLikeThisQuery: 实现基于内容推荐, 支持实现一句话相似文章查询
      * {   
@@ -155,27 +157,16 @@ moreLikeThisQuery
         "like_text" : "text like this one",   // 匹配的文本
         }   
     }     
-
     percent_terms_to_match：匹配项（term）的百分比，默认是0.3
-
     min_term_freq：一篇文档中一个词语至少出现次数，小于这个值的词将被忽略，默认是2
-
     max_query_terms：一条查询语句中允许最多查询词语的个数，默认是25
-
     stop_words：设置停止词，匹配时会忽略停止词
-
     min_doc_freq：一个词语最少在多少篇文档中出现，小于这个值的词会将被忽略，默认是无限制
-
     max_doc_freq：一个词语最多在多少篇文档中出现，大于这个值的词会将被忽略，默认是无限制
-
     min_word_len：最小的词语长度，默认是0
-
     max_word_len：最多的词语长度，默认无限制
-
     boost_terms：设置词语权重，默认是1
-
     boost：设置查询权重，默认是1
-
     analyzer：设置使用的分词器，默认是使用该字段指定的分词器
      */
     @Test
