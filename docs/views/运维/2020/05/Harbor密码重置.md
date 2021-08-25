@@ -4,7 +4,7 @@ date: 2020-05-19
 tags:
  - Docker
  - Harbor
-categories: 
+categories:
  - 后端
 ---
 
@@ -19,7 +19,7 @@ harbor现在是使用postgresql 数据库了。不再支持mysql，网上有N多
 官方的安装包为： harbor-offline-installer-v1.7.5.tgz
 
 具体步骤：
-1、进入[harbor-db]容器内部
+1、进入`harbor-db`容器内部
 ```sh
 docker exec -it harbor-db /bin/bash
 ```
