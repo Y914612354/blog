@@ -22,3 +22,22 @@ categories:
 # dev
 
 需要拉取reco主题代码到.vuepress/theme
+
+
+
+
+# 标签说明
+| 标签   |  说明  |
+|:---|:---|
+|    |    |
+|    |    |
+
+
+
+
+
+
+# 注意事项
+1. 新建文章需要重新启动
+2. 更新`more`标签以上的内容都需要重启 `title`除外
+3. JB全家桶markdown插件地址https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced/
