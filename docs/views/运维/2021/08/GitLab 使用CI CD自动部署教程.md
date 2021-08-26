@@ -8,7 +8,7 @@ categories:
   - 运维
 ---
 
-基于GitLab(EE)的CI/CD自动部署
+基于GitLab(CE)的CI/CD自动部署
 <!-- more -->
 
 
@@ -38,16 +38,15 @@ sudo gitlab-runner register
  - 选择执行器，`gitlab-runner`实现了很多执行器，可用在不同场景中运行构建，详情可见`GitLab Runner Executors`，这里选用`Shell`模式
 
 `IP`和`令牌`从下图位置获取
-![获取令牌示例图](http://qiniu.remember5.top/images/20210825/586d423aafd14a8b86a978508c964d52.png)
+![获取令牌示例图](http://qiniu.remember5.top/images/20210826/6e18397e0be84b3db32d5c420ca1ba33.png)
 注册完毕后 输入命令查看
 ```
 cat /etc/gitlab-runner/config.toml
 ```
-
-![示例图1](http://qiniu.remember5.top/images/20210825/f32015455f124feb87ae42d7497716b5.png)
+![示例图1](http://qiniu.remember5.top/images/20210826/55c806221bb04ab0b235834987456964.png)
 
 同时也可以在`GitLab`页面上查看
-![示例图2](http://qiniu.remember5.top/images/20210825/d2b796584d2749929dd176ff10f68934.png)
+![示例图2](http://qiniu.remember5.top/images/20210826/4e252342a18249f7a0ad610d1c2d8e0a.png)
 
 -------------
 -------------
@@ -57,12 +56,12 @@ cat /etc/gitlab-runner/config.toml
 ![示例图3](http://qiniu.remember5.top/images/20210825/0c0d69795eb94de79c2f1436872a6d39.png)
 
 上传`CI`脚本文件后，在GitLab上查看流水线作业
-![示例图4](http://qiniu.remember5.top/images/20210825/0d4cc5b06980465090b61b2f955e877a.png)
+![示例图4](http://qiniu.remember5.top/images/20210826/b7b6fcb439c040f98657d2ef636691ea.png)
 
 若流水线作业暂停，显示暂无可用runner  
 需要前往以下地方配置  
-![示例图5](http://qiniu.remember5.top/images/20210825/6c900ee43a8941238ba3b5b126d17333.png)
-![示例图6](http://qiniu.remember5.top/images/20210825/bc2154f0d239457ba9a6aa7ef227a852.png)
+![示例图5](http://qiniu.remember5.top/images/20210826/f4aef3f5a56c4a8f9bb70203b3edf51f.png)
+![示例图6](http://qiniu.remember5.top/images/20210826/66655746c53e4935929e5c442cc58169.png)
 
 -------------
 -------------
@@ -76,7 +75,7 @@ vim nginx.conf              # 查看配置文件
 ```
 
 墙裂建议修改配置之前先备份一份配置文件
-![修改nginx配置文件示例图](http://qiniu.remember5.top/images/20210825/31c9dccc15394f378e77c04abe931c65.png)
+![修改nginx配置文件示例图](http://qiniu.remember5.top/images/20210826/e8d7465d3d4a40969245501b590a9685.png)
 
 
 重启nginx
@@ -92,7 +91,7 @@ cd /usr/local/nginx/sbin  # 切换路径
 ## 注意事项
 `eladmin-web`项目部署之前的部分修改  
 修改访问域名
-![修改前端访问域名](http://qiniu.remember5.top/images/20210825/a3728ec509f24d888693330ca20de9d0.png)
+![修改前端访问域名](http://qiniu.remember5.top/images/20210826/82790ba3a45a4891b8b093e5f77b6e81.png)
 
 修改访问路径
 ![修改前端访问路径](http://qiniu.remember5.top/images/20210825/6f8f3309fb1041d5a4d9e81d47f35382.png)
